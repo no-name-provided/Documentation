@@ -13,7 +13,7 @@ Access Transformers need to be declared in `build.gradle`. AT files can be speci
 ```groovy
 // In build.gradle:
 // This block is where your mappings version is also specified
-minecraft {
+neoForge {
     accessTransformers {
         file('src/main/resources/META-INF/accesstransformer.cfg')
     }
@@ -34,7 +34,7 @@ Additionally, multiple AT files can be specified and will be applied in order. T
 
 ```groovy
 // In build.gradle:
-minecraft {
+neoForge {
     accessTransformers {
         file('src/main/resources/accesstransformer_main.cfg')
         file('src/additions/resources/accesstransformer_additions.cfg')
